@@ -20,7 +20,11 @@ const processStyle = (htmlStr) => {
 const processHTMLString = (html) => {
 	let start = html.search('<section class="posts ">');
 	let end = html.search("</section>");
-	return html.slice(start, end + 10);
+	html = html.slice(start, end + 10);
+	while (html.search('href="/') !== -1) {
+		html = html.replace('href="/', 'href="https://www.sesvtutorial.com/');
+	}
+	return html;
 };
 
 // to get the latest list
