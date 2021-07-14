@@ -1,0 +1,13 @@
+*{
+  margin: 0px;
+}
+#fetchList{
+  font-size: 42px;
+  padding: 20px;
+  color: white;
+  background-color:darkgoldenrod;
+  text-align: center;
+}
+#fetchList:hover{
+  background-color: goldenrod;
+}
